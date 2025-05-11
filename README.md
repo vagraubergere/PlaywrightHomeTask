@@ -9,14 +9,14 @@
 1. Enter valid username - Valid username is entered (e.g. User1)
 2. Enter valid email - Valid email is entered (e.g. user@user.com)
 3. Enter valid password - Valid password is entered (e.g. Password1)
-4. Enter same password as in previous field - Matching password is entered (e.g. Password1)
+4. Enter same value as in "Password" field - Matching password is entered (e.g. Password1)
 5. Press "Submit" button - User is redirected to the homepage; Success message "You have registered successfully!" displayed
 
 **Test 2** - *Positive scenario - Short username
 1. Enter shortest valid username (3 characters) - Valid username is entered (e.g. 123)
 2. Enter valid email - Valid email is entered (e.g. user@user.com)
 3. Enter valid password - Valid password is entered (e.g. Password1)
-4. Enter same password as in previous field - Matching password is entered (e.g. Password1)
+4. Enter same value as in "Password" field - Matching password is entered (e.g. Password1)
 5. Press "Register" button - User is redirected to the homepage; Success message "You have registered successfully!" displayed
 
 **Test 3** - Negative scenario - Empty form
@@ -27,7 +27,7 @@
 1. Enter INVALID username - Invalid username is entered (e.g <3 or >20 character, only special symbols)
 2. Enter valid email - Valid email is entered (e.g. user@user.com)
 3. Enter valid password - Valid password is entered (e.g. Password1)
-4. Enter same password as in previous field - Matching password is entered (e.g. Password1)
+4. Enter same value as in "Password" field - Matching password is entered (e.g. Password1)
 5. Press "Register" button - User is NOT redirected to the homepage; *Success message "You have registered successfully!" IS NOT displayed*; Username field is highlighted and error message is displayed
 ________________
 
