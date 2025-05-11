@@ -1,38 +1,39 @@
 #### Task 1
 
+**Preconditions:** *(relevant for all tests)*
+- Open website (https://auth-home-task.vercel.app/) and click "Go to registration" button
+
+*Tests are written in "step - expected result" format*
+
 **Test 1** - Positive scenario - All valid
-1* Open website with reg form
-1. Enter valid username - valid username is entered (e.g. User1)
-2. Enter valid email - valid email is entered (e.g. user1@user.com)
-3. Enter valid password - valid password is entered (e.g. Password1)
-4. Enter same password as in previous field - matching password is entered (e.g. Password1)
+1. Enter valid username - Valid username is entered (e.g. User1)
+2. Enter valid email - Valid email is entered (e.g. user@user.com)
+3. Enter valid password - Valid password is entered (e.g. Password1)
+4. Enter same password as in previous field - Matching password is entered (e.g. Password1)
 5. Press "Submit" button - User is redirected to the homepage; Success message "You have registered successfully!" displayed
 
 **Test 2** - *Positive scenario - Short username
-1* Open website with reg form
-1. Enter shortest valid username (3 characters) - valid username is entered (e.g. 123)
-2. Enter valid email - valid email is entered (e.g. 123@user.com)
-3. Enter valid password - valid password is entered (e.g. Password1)
-4. Enter same password as in previous field - matching password is entered (e.g. Password1)
+1. Enter shortest valid username (3 characters) - Valid username is entered (e.g. 123)
+2. Enter valid email - Valid email is entered (e.g. user@user.com)
+3. Enter valid password - Valid password is entered (e.g. Password1)
+4. Enter same password as in previous field - Matching password is entered (e.g. Password1)
 5. Press "Register" button - User is redirected to the homepage; Success message "You have registered successfully!" displayed
 
 **Test 3** - Negative scenario - Empty form
-1* Open website with reg form
 1. Leave all the fields empty
 2. Press "Register" button - User is NOT redirected to the homepage; *Success message "You have registered successfully!" IS NOT displayed*; All fields highlighted and error messages are shown for each field 
 
 **Test 4** - Negative scenario - Invalid username
-1* Open website with reg form
-1. Enter INVALID username - invalid username is entered
-2. Enter valid email - valid email is entered
-3. Enter valid password - valid password is entered
-4. Enter same password as in previous field - matching password is entered
+1. Enter INVALID username - Invalid username is entered (e.g <3 or >20 character, only special symbols)
+2. Enter valid email - Valid email is entered (e.g. user@user.com)
+3. Enter valid password - Valid password is entered (e.g. Password1)
+4. Enter same password as in previous field - Matching password is entered (e.g. Password1)
 5. Press "Register" button - User is NOT redirected to the homepage; *Success message "You have registered successfully!" IS NOT displayed*; Username field is highlighted and error message is displayed
 ________________
 
 #### Task 2
 
-**Bug 1** - No error messages when incorrectly filling email field
+**Bug 1** - No error messages for other fields when incorrectly filling email field
 
 **Description:** No error message is shown for the each failed field when Email is filled incorrectly (e.g missing @smtn.com)
 
