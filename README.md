@@ -112,6 +112,7 @@ _____________
 - Either Submit button should be renamed to "Register" in the requirments or vice versa
 - Add id to elements - suggestion to ease test automation (clear, short locators)
 - Combine fields and validation requirments so all related information is in one place and is easier to read, e.g.:
+  
   **Registration Form Requirments:**
 
 - **Username:**
