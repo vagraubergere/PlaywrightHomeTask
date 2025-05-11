@@ -46,6 +46,7 @@ ________________
 2. Click "Submit" button
 
 **Expected Result:** Clear error messages are displayed for each failed field
+
 **Actual Result:** 
 - Validation for Email field doesn't fit the format ofother fields (tooltip instead of error message)
 - When Email validation is triggered other failed fields are not highlighted 
@@ -66,6 +67,7 @@ _____________________
 1. Navigate to "Submit" button
  
 **Expected Result:** Button name is "Submit"
+
 **Actual Result:** Button name is "Register"
 *Evidence (e.g screenshots/video)*
 
@@ -85,6 +87,7 @@ _____________
 1. Start typing in the field with error
  
 **Expected Result:** Error message is cleared when user starts typing
+
 **Actual Result:** Error message is still displayed until user clicks "Submit"
 *Evidence (e.g screenshots/video)*
 
