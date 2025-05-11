@@ -82,10 +82,10 @@ _____________
 - Fields have error messages from previous failed attempt
   
 **Steps to reproduce:**
-1. Enter valid value into the field with error
+1. Start typing in the field with error
  
-**Expected Result:** Error message is removed
-**Actual Result:** Error message is still displayed until user clicks "submit"
+**Expected Result:** Error message is cleared when user starts typing
+**Actual Result:** Error message is still displayed until user clicks "Submit"
 *Evidence (e.g screenshots/video)*
 
 **Version:** Google Chrome Version 135.0.7049.116
@@ -94,23 +94,55 @@ _____________
 #### Task 4
 
 - Restrict Username field to a specific amount of characters (not more than 20)
-- Add tooltip/tips above or near each field with instructions
-- Add real-time validation
-- Highlight fields with errors (e.g. red frame, rec exclamation mark)
+- Add tooltip/suggestions around or inside each field with instructions
+- Add real-time validation (entered value is being validated as user types and error messaga is displayed right away)
+- Highlight fields with errors (e.g. red frame)
 - Disable "Submit" button until all field pass validation
 - Show/Hide password toggle
 - Real-time validation/visual feedback for password field or password strength meter
 - CapsLock alert
-***- Register with SSO
 
 #### Task 5
 
 - Consider adding special characters to enhance password strength
-***- Register with SSO
-*****- Accessibility keyboard navigation
-- Add id to elements 
+- Register with SSO
+- Either Submit button should be renamed to "Register" in the requirments or vice versa
+- Add id to elements - suggestion to ease test automation (clear, short locators)
+- Combine fields and validation requirments so all related information is in one place and is easier to read, e.g.:
+  **Registration Form Requirments:**
+
+- **Username:**
+  - Required field
+  - Must be between 3 and 20 characters.
+  - Only alphanumeric characters allowed.
+  - No spaces or special characters.
+
+- **Email:**
+  - Required field
+  - Must follow standard email format (e.g., example@domain.com)
+
+- **Password:**
+  - Required field
+  - Minimum 8 characters.
+  - At least one uppercase letter (A–Z).
+  - At least one lowercase letter (a–z).
+  - At least one numeric digit (0–9).
+  - (Optional): Recommend adding a special character rule for enhanced security.
+
+- **Confirm Password:**
+  - Required field
+  - Must match the Password field exactly.
+ 
+- **Submit Button:**
+  - Specified name
+  - Submit the form
+
 
 #### Task 6
-- Accessibility
-- Load?
-
+- Are registered users added to database
+- Unique username and email validation (username/email already registered)
+- Registration API
+- Are passwords stored in encrypted format
+- Can you login with users you have registered
+- Accessibility voice over
+- Load tests
